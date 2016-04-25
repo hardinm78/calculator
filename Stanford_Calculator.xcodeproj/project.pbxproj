@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E31F4FF1CCAF77300384444 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E31F4FE1CCAF77300384444 /* CalculatorBrain.swift */; };
+		8E31F5011CCBC7E300384444 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E31F5001CCBC7E300384444 /* CustomButton.swift */; };
 		8E95D1261CC9194D00BD7FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95D1251CC9194D00BD7FC2 /* AppDelegate.swift */; };
 		8E95D1281CC9194D00BD7FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95D1271CC9194D00BD7FC2 /* ViewController.swift */; };
 		8E95D12B1CC9194D00BD7FC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E95D1291CC9194D00BD7FC2 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E31F4FE1CCAF77300384444 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		8E31F5001CCBC7E300384444 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8E95D1221CC9194D00BD7FC2 /* Stanford_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E95D1251CC9194D00BD7FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E95D1271CC9194D00BD7FC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +58,24 @@
 		8E95D1241CC9194D00BD7FC2 /* Stanford_Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8E95D1251CC9194D00BD7FC2 /* AppDelegate.swift */,
 				8E95D1271CC9194D00BD7FC2 /* ViewController.swift */,
 				8E95D1291CC9194D00BD7FC2 /* Main.storyboard */,
+				8E31F4FE1CCAF77300384444 /* CalculatorBrain.swift */,
+				8E95D1371CC922C700BD7FC2 /* Supporting Files */,
+				8E31F5001CCBC7E300384444 /* CustomButton.swift */,
+			);
+			path = Stanford_Calculator;
+			sourceTree = "<group>";
+		};
+		8E95D1371CC922C700BD7FC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E95D1251CC9194D00BD7FC2 /* AppDelegate.swift */,
 				8E95D12C1CC9194D00BD7FC2 /* Assets.xcassets */,
 				8E95D12E1CC9194D00BD7FC2 /* LaunchScreen.storyboard */,
 				8E95D1311CC9194D00BD7FC2 /* Info.plist */,
 			);
-			path = Stanford_Calculator;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					8E95D1211CC9194D00BD7FC2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RFR5R2MW37;
 					};
 				};
 			};
@@ -135,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E31F4FF1CCAF77300384444 /* CalculatorBrain.swift in Sources */,
 				8E95D1281CC9194D00BD7FC2 /* ViewController.swift in Sources */,
 				8E95D1261CC9194D00BD7FC2 /* AppDelegate.swift in Sources */,
+				8E31F5011CCBC7E300384444 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Stanford_Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHardin.Stanford-Calculator";
@@ -262,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Stanford_Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHardin.Stanford-Calculator";
@@ -288,6 +307,7 @@
 				8E95D1361CC9194D00BD7FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
